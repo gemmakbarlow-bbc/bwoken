@@ -13,3 +13,6 @@ rdoc
 spec/reports
 tmp
 bundler_bin
+
+/lib/.DS_Store
+.DS_Store

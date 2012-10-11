@@ -82,7 +82,15 @@ module Bwoken
       make_results_path_dir
 
       exit_status = 0
+        
       Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
+        
+        puts "----------------------------"
+        puts "Instruments launched via command :"
+        puts "----------------------------"
+        puts cmd
+        puts "----------------------------"
+        
         exit_status = Bwoken.formatter.format stdout
       end
       raise ScriptFailedError.new('Test Script Failed') unless exit_status == 0
