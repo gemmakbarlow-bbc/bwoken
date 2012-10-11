@@ -19,7 +19,8 @@ module Bwoken
     end
 
     def app_name
-      File.basename(File.basename(workspace_or_project, '.xcodeproj'), '.xcworkspace')
+        #File.basename(File.basename('BBCTopGear-iPhone', '.xcodeproj'), '.xcworkspace')
+        'BBCTopGear-iPhone'
     end
 
     def formatter
