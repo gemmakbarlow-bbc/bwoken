@@ -61,6 +61,12 @@ module Bwoken
       Bwoken.formatter.before_build_start
 
       exit_status = 0
+      
+      puts "\n\nxCommand being issued (xcodebuild) is:"
+      puts "---------------------------------"
+      puts cmd
+      puts "---------------------------------\n\n"
+
       Open3.popen3(cmd) do |stdin, stdout, stderr, wait_thr|
 
         out_string = Bwoken.formatter.format_build stdout
