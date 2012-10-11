@@ -62,7 +62,7 @@ module Bwoken
 
       exit_status = 0
       
-      puts "\n\nxCommand being issued (xcodebuild) is:"
+      puts "\n\nCommand being issued (xcodebuild) is:"
       puts "---------------------------------"
       puts cmd
       puts "---------------------------------\n\n"
