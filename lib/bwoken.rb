@@ -66,8 +66,8 @@ module Bwoken
       ws = xcworkspace
       if ws && File.exists?(ws)
         "-workspace #{ws}"
-          #else
-          #"-project #{xcodeproj}"
+      else
+        "-project #{xcodeproj}"
       end
     end
 
